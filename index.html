@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrinho de Compras</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Carrinho de Compras</h1>
+            <div id="userInfo"></div>
+            <div id="loginForm">
+                <input type="text" id="username" placeholder="Usuário">
+                <input type="password" id="password" placeholder="Senha">
+                <button onclick="login()">Login</button>
+            </div>
+            <h2>Produtos</h2>
+            <div id="products" class="product-list"></div>
+            <div id="cart" class="cart">
+                <h2>Carrinho</h2>
+                <div id="cartItems"></div>
+                <div id="cartTotal"></div>
+                <button onclick="checkout()">Finalizar Compra</button>
+            </div>
+        </div>
+    </body>
+</html>
